@@ -1,0 +1,3 @@
+import Link from "next/link";
+export const metadata={title:"Admin | Sachin Cinematography"};
+export default function Admin(){return <main className="admin-page"><div className="admin-card"><span className="brand-mark">S.</span><p className="eyebrow">SACHIN CINEMATOGRAPHY</p><h1>Admin workspace</h1><p>The management area is scaffolded. Supabase authentication, database tables and media uploads must be connected before this page can manage live website content.</p><Link className="button button-dark" href="/">BACK TO WEBSITE ↗</Link></div></main>}
