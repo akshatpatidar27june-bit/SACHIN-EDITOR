@@ -8,7 +8,8 @@ export default function Contact(){
  const [busy,setBusy]=useState(false);
  const [status,setStatus]=useState("");
  async function submit(event){
-  event.preventDefault();setStatus("");\n  const formElement=event.currentTarget;
+  event.preventDefault();setStatus("");
+  const formElement=event.currentTarget;
   const client=getSupabaseBrowserClient();
   if(!client){setStatus("The enquiry form is not connected yet. Please message Sachin on Instagram.");return;}
   const form=new FormData(formElement);
