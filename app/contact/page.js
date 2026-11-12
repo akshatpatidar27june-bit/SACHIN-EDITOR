@@ -8,10 +8,10 @@ export default function Contact(){
  const [busy,setBusy]=useState(false);
  const [status,setStatus]=useState("");
  async function submit(event){
-  event.preventDefault();setStatus("");
+  event.preventDefault();setStatus("");\n  const formElement=event.currentTarget;
   const client=getSupabaseBrowserClient();
   if(!client){setStatus("The enquiry form is not connected yet. Please message Sachin on Instagram.");return;}
-  const form=new FormData(event.currentTarget);
+  const form=new FormData(formElement);
   setBusy(true);
   const {error}=await client.from("enquiries").insert({
    name:String(form.get("name")||"").trim(),
@@ -21,7 +21,7 @@ export default function Contact(){
   });
   setBusy(false);
   if(error){setStatus("We couldn't send that enquiry just now. Please try Instagram instead.");return;}
-  event.currentTarget.reset();
+  formElement.reset();
   setStatus("Thank you. Your enquiry has been received.");
  }
  return <Shell><main className="inner-page"><section className="page-hero"><SectionLabel>LET'S CONNECT</SectionLabel><h1>Tell me what<br/><em>you're dreaming of.</em></h1><p>Share a few details about your event or project. We can take it from there.</p></section><section className="contact-layout section-pad">
