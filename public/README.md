@@ -1,0 +1,1 @@
+Place the two website assets in this folder before launch:\n- sachin-photo.png\n- cine-rig-background-clean.html\n\nThe homepage and About page reference these exact paths. The animation file should have its demo section text and visible HUD removed.\n
