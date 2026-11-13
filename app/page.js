@@ -6,7 +6,7 @@ export default function Home(){
  return <Shell>
   <main>
    <section className="hero">
-    <iframe className="hero-3d-background" src="/cine-rig-background-clean.html" title="Animated 3D cinema camera rig background" aria-hidden="true" tabIndex={-1}/>
+    <iframe className="hero-3d-background" src="/cine-rig-background-clean.html" title="Animated 3D cinema camera rig background" aria-hidden="true" tabIndex={-1} loading="eager"/>
     <div className="hero-grid"></div><div className="hero-shade"></div>
     <div className="hero-content"><div className="eyebrow light"><span/> INDEPENDENT FILMMAKER · MANDSAUR, INDIA</div>
      <p className="hero-kicker">EVERY FRAME HAS A FEELING.</p><h1>Life happens.<br/><em>We make it</em> <span>cinematic.</span></h1>
