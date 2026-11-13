@@ -23,11 +23,11 @@ npm run dev
 
 The homepage expects `public/cine-rig-background-clean.html`. The About page expects `public/sachin-photo.png`.
 
-The supplied files are prepared in the companion asset package:
-- `public/cine-rig-background-clean.html` — Three.js cinema-rig scene with the demo section copy and visible HUD removed.
-- `public/sachin-photo.png` — supplied Sachin portrait.
+The supplied assets are committed in the `public/` folder:
+- `public/cine-rig-background-clean.html` — self-contained Three.js cinema-rig background with demo instructions, HUD labels and error overlay removed. It respects reduced-motion preferences and uses a lower render pixel ratio on small screens.
+- `public/sachin-photo.png` — supplied Sachin portrait used on the About page.
 
-Add both files to the repository's `public/` folder before expecting the 3D background and portrait to appear. The HTML animation file is self-contained and runs inside a background iframe; it should not contain portfolio text or demo labels.
+Keep these filenames and paths unchanged unless the corresponding page references are updated. The animation runs inside a decorative, non-interactive homepage iframe; portfolio copy stays in the Next.js page, not inside the animation.
 
 ## Supabase setup
 

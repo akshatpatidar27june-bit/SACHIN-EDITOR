@@ -25,3 +25,15 @@
 .menu-toggle{cursor:pointer}
 @media(max-width:760px){.portfolio-callout{align-items:flex-start;flex-direction:column;gap:24px}.portfolio-callout .button{max-width:100%}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+@media(min-width:761px) and (max-width:980px){
+ .header{padding:0 4vw}
+ .nav{gap:15px;font-size:10px}
+ .section-pad{padding:96px 7vw}
+ .hero{padding:7vw}
+ .about-layout{gap:5vw}
+ .contact-layout{gap:6vw}
+ .work-grid{gap:22px}
+ .work-large .work-art{height:590px}
+ .sachin-portrait{height:520px}
+}
